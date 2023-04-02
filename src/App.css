@@ -1,38 +1,66 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gif{
+  background-color: black;
+}
+.gif img {
+  width: 100vw;
+  height:90vh;
+  margin-left: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 900px) {
+  section{
+    height: 70vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .gif{
+    width: 100vw;
+    margin-left: 2px;
   }
-  to {
-    transform: rotate(360deg);
+  .gif img{
+    width: 80vw;
+    height: 50vh;
   }
+
+  .Header{
+    height: 60px;
+  }
+  .Header img{
+    margin-left: -80px;
+    width: 100px;
+  }
+  .container ul {
+    margin-bottom: 0px;
+    margin-right: -90px;
+    font-weight: 200;
+    font-size: small;
+  }  
 }
+  /* (x-small deviceS*/
+  @media screen and (max-width: 450px){
+    section{
+      height: 50vh;
+    }
+    .gif{
+      margin-left: 1.8px;
+    }
+    .gif img{
+      width: 85vw;
+      height: 30vh;
+      margin-left: -10px;
+    }
+    .Header img{
+      margin-left: -80px;
+      height: 30px;
+    }
+    .container ul {
+      margin-right: -100px;
+    }  
+  }

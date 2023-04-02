@@ -1,0 +1,112 @@
+.title h4{
+    margin-top: -1rem;
+    font-family: Arial;
+    font-weight: bold;
+    color: #DAA520;
+    font-size: 30px;
+}
+.title p{
+    margin-top: 3rem;
+    color: white;
+    font-size: 20px;
+}
+.experience_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.experience_container > div{
+    background: #c69e3c;
+    color: black;
+    padding: 1rem 0.1rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.experience_container > div:hover{
+    background: transparent;
+    border-color: #DAA520;
+    color: white;
+    cursor: default;
+}
+.experience_container .fd{
+    font-family: Georgia;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: bold;
+    
+}
+ .experience_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+ }
+.experience_details{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.experience_details img{
+    width: 60px;
+}
+.experience_details p{
+    font-family: Georgia;
+    margin-top: 16px;
+   font-size: 21px;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 900px){
+    .experience_container{
+        grid-template-columns: 1fr;
+    }
+    .experience_container > div{
+        width: 70%;
+        padding: 1.5rem;
+        margin: 0 auto;
+    }
+    .experience_details {
+        gap: 0px;
+    }
+    .experience_details img {
+        width: 55px;
+        height: 66px;
+    }
+    .experience_details p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #experience{
+        margin-top: 35rem;
+    }
+    .experience_content {
+        gap: 0rem;
+    }
+
+    .experience_container{
+        gap: 1rem;
+    }
+    .experience_container > div{
+        width: 90%;
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .title p{
+        margin-top: 17rem;
+    }
+    .experience_details img {
+        width: 56px;
+        height: 54px;
+    }
+    .experience_details p {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+}
