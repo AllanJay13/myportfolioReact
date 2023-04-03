@@ -49,6 +49,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
+        <p>"Believe in yourself and your ability to learn. With hard work, dedication, and a passion for coding, you can become a successful full-stack web developer and turn your dreams into reality."</p>
       </div>
     </section>
   )
