@@ -59,6 +59,13 @@
    font-size: 21px;
    font-weight: bold;
 }
+.tag p{
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
 
 @media screen and (max-width: 900px){
     .experience_container{
